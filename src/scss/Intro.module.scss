@@ -1,0 +1,8 @@
+.imagemFundo {
+  background-image: url('../../public/ink_paint_splashes_193248_2560x1080.jpg');
+  background-color: #cccccc; /* Used if the image is unavailable */
+  height: fit-content; /* You must set a specified height */
+  background-position: center; /* Center the image */
+  background-repeat: no-repeat, no-repeat; /* Do not repeat the image */
+  background-size: cover; /* Resize the background image to cover the entire container */
+}

@@ -1,0 +1,13 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.humbleicons {
+  width: 1.5em;
+  height: 1.5em;
+  display: inline-block;
+  align-self: center;
+  vertical-align: middle;
+  margin-top: -0.1em;
+}
+

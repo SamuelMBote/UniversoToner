@@ -1,4 +1,4 @@
-import type { Config } from 'tailwindcss'
+import type {Config} from 'tailwindcss';
 
 const config: Config = {
   content: [
@@ -8,6 +8,7 @@ const config: Config = {
   ],
   theme: {
     extend: {
+      colors: {whatsapp: '#25d366', facebook: '#3B5998', instagram: '#DD2A7B'},
       backgroundImage: {
         'gradient-radial': 'radial-gradient(var(--tw-gradient-stops))',
         'gradient-conic':
@@ -15,6 +16,12 @@ const config: Config = {
       },
     },
   },
-  plugins: [],
-}
-export default config
+  plugins: [require('@tailwindcss/forms')],
+  safelist: [
+    {
+      pattern: /(bg|text|border)-(facebook|whatsapp|instagram)/gim,
+    },
+  ],
+};
+export default config;
+
