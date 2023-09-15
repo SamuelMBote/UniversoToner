@@ -12,10 +12,26 @@ const FormContato = () => {
   };
   return (
     <form className="container mx-auto p-4" onSubmit={handleSubmit}>
-      <Input label="Nome" placeholder="Nome" name="nome" />
-      <Input label="Email" type="email" placeholder="Email" name="email" />
+      <Input
+        backgroundColor="bg-cyan-50"
+        label="Nome"
+        placeholder="Nome"
+        name="nome"
+      />
+      <Input
+        backgroundColor="bg-fuchsia-50"
+        label="Email"
+        type="email"
+        placeholder="Email"
+        name="email"
+      />
 
-      <Select label="Opcao" name="opcao" id="opcao">
+      <Select
+        backgroundColor="bg-yellow-50"
+        label="Opcao"
+        name="opcao"
+        id="opcao"
+      >
         <option value="cotacao">Cotação</option>
         <option value="reclamacao">Reclamação</option>
         <option value="sugestao">Sugestão</option>

@@ -8,7 +8,7 @@ const Textarea = ({label, name, ...props}: ITextareaProps) => {
       </label>
       <textarea
         name={name}
-        className=" form-textarea w-full block rounded-xl focus:ring-black focus:border-4 focus:border-black border-black bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-yellow-50 text-black font-semibold focus:bg-transparent"
+        className=" form-textarea w-full block rounded-xl focus:ring-black focus:border-4 focus:border-black border-black bg-gradient-to-r from-cyan-50 via-fuchsia-100 to-yellow-50 text-black font-semibold focus:bg-transparent"
         {...props}
       />
     </div>

@@ -10,17 +10,17 @@ export default function Home() {
     <main className="min-h-fit">
       <Intro />
       <Section>
-        <Titulo alinhamento="center" tamanho="4xl">
+        <Titulo alinhamento="text-center" tamanho="text-3xl">
           Nosso Objetivo
         </Titulo>
-        <div className="container mx-auto flex flex-col md:flex-row gap-4 p-4 ">
+        <div className="container mx-auto flex flex-col md:flex-row md:space-x-10  p-4 ">
           {objetivoEmpresa.map((atributo) => (
             <AtributosEmpresa {...atributo} key={atributo.titulo} />
           ))}
         </div>
       </Section>
       <Section cor="bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-yellow-50">
-        <div className="container mx-auto flex flex-col md:flex-row gap-6 p-4 ">
+        <div className="container mx-auto flex flex-col md:flex-row   p-4 space-x-10">
           <div className="basis-1/3 flex flex-col justify-center items-center">
             <Image
               className="mb-4"

@@ -1,6 +1,9 @@
 import React from 'react';
-type IInputProps = React.ComponentProps<'input'> & {label: string};
-const Input = ({label, name, ...props}: IInputProps) => {
+type IInputProps = React.ComponentProps<'input'> & {
+  label: string;
+  backgroundColor: 'bg-cyan-50' | 'bg-fuchsia-50' | 'bg-yellow-50';
+};
+const Input = ({label, name, backgroundColor, ...props}: IInputProps) => {
   return (
     <div className="mb-4">
       <label className="text-sm block " htmlFor={name}>
@@ -8,7 +11,9 @@ const Input = ({label, name, ...props}: IInputProps) => {
       </label>
       <input
         name={name}
-        className="form-input w-full block rounded-xl focus:ring-black focus:border-4 focus:border-black border-black bg-gradient-to-r from-cyan-50 via-fuchsia-50 to-yellow-50 text-black font-semibold focus:bg-transparent"
+        className={`form-select w-full block rounded-xl focus:ring-black 
+        ${backgroundColor} focus:border-4 focus:border-black 
+        border border-black text-black font-semibold focus:bg-transparent`}
         type="text"
         {...props}
       />
